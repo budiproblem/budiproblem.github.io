@@ -1,0 +1,117 @@
+
+/*----------------------------------------------------------------------------------------
+										BLUE COLOR STYLES
+-----------------------------------------------------------------------------------------*/
+
+
+
+body { background: #1f98ff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { color: #1f98ff; }
+
+ul.triangle_list li:before { border-color: transparent transparent transparent #1f98ff; }
+
+blockquote { color: #1f98ff; }
+
+code,
+pre { border-left: 5px solid #1f98ff; }
+
+.btn-primary {
+	background: #1f98ff;
+	color: #fff;
+}
+
+.btn-primary:hover { background: #38a4ff; }
+
+.btn-default,
+.btn-default:hover { color: #1f98ff; }
+
+.icon { color: #1f98ff; }
+
+.tags li a:hover {
+	color: #1f98ff;
+	border: 1px solid #60b6ff;
+}
+
+
+/*----------------------------------------------------------------------------------------
+										PRELOADER
+----------------------------------------------------------------------------------------*/
+
+
+#preloader .clock { border: 1px solid #1f98ff; }
+
+#preloader .clock:after,
+#preloader .clock .arrow_sec { background: #1f98ff; }
+
+
+
+/*----------------------------------------------------------------------------------------
+										 SIDEBAR
+----------------------------------------------------------------------------------------*/
+
+aside.sidebar .side_link{color:#1f98ff;}
+aside.sidebar .category ul a:hover{
+	color:#1f98ff;
+	border-bottom:1px solid #60b6ff;
+}
+
+
+
+/*----------------------------------------------------------------------------------------
+										HEADER
+----------------------------------------------------------------------------------------*/
+
+
+
+.navbar-brand { background: #1f98ff; }
+
+/*----------------------------------------------------------------------------------------
+										INTRO
+----------------------------------------------------------------------------------------*/
+
+.intro_block h2,
+.intro_block h2.main_slogan { color: #444; }
+
+.intro_block h2.main_slogan .type { color: #444; }
+
+#typed-cursor { color: #1f98ff; }
+
+/*----------------------------------------------------------------------------------------
+										PORTFOLIO
+----------------------------------------------------------------------------------------*/
+
+
+.portfolio_block a.btn_all { border: 1px solid #bbe0ff; }
+
+.portfolio_block a.btn_all:hover { border: 1px solid #1f98ff; }
+
+.portfolio_block .item_container .info .icon { color: #1f98ff; }
+
+.portfolio_block .filter ul li a:hover,
+.portfolio_block .filter ul li a.active {
+	border-bottom: 1px solid #1f98ff;
+	color: #1f98ff;
+}
+
+/*----------------------------------------------------------------------------------------
+											ABOUT
+----------------------------------------------------------------------------------------*/
+
+
+#subscribe_form .input-group { border: 1px solid #e6f4ff; }
+
+#subscribe_form .btn { background: #e6f4ff; }
+
+/*----------------------------------------------------------------------------------------
+											FOOTER
+----------------------------------------------------------------------------------------*/
+
+
+
+footer { color: #fff; }
