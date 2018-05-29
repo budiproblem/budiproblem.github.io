@@ -2432,11 +2432,11 @@ footer .logo img { margin-bottom: 20px; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 header .navbar-brand img,
-footer .logo img { content: url("../images/logo@2x.png"); }
+footer .logo img { content: url("../images/logo2.png"); }
 
 .owl-controls .owl-buttons { display: none; }
 
-.intro_block .img_slogan img { content: url("../images/big_logo@2x.png"); }
+.intro_block .img_slogan img { content: url("../images/logo2.png"); }
 }
 
 /*----------------------------------------------------------------------------------------
