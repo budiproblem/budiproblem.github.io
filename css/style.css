@@ -1245,7 +1245,28 @@ rotation { 0% {
 	z-index: 1;
 }
 
+.intro_block h4.main_slogan2 {
+	width: 100%;
+	color: #606571;
+	display: block;
+	position: absolute;
+	top: 80%;
+	margin-top: -40px;
+	font-weight: 100;
+	letter-spacing: 4px;
+	word-spacing: 10px;
+	line-height: 80px;
+	text-align: center;
+	z-index: 1;
+}
+
 .intro_block h2 span{
+	padding-right: 10px;
+	padding-left: 10px;
+	background-color: white;
+}
+
+.intro_block h4 span{
 	padding-right: 10px;
 	padding-left: 10px;
 	background-color: white;
@@ -1712,7 +1733,7 @@ opacity:1;
 
 .about_block { background: #f8f8f8; }
 
-.about_block .half_img { background-image: url(../images/about_img2b.jpg); }
+.about_block .half_img { background-image: url(../images/about_img4b.jpg); }
 
 .about_block small {
 	display: block;
