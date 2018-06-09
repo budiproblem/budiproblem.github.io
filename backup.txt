@@ -1,0 +1,21 @@
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type here">
+
+<script>
+function myFunction() {
+  var input, filter, div, a, h4, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myHave");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    h4 = a[i].getElementsByTagName("h4")[0];
+    if (h4) {
+      if (h4.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
