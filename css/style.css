@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,700);
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -20,7 +21,7 @@ a:hover {
 }
 
 a:focus { 
-    outline: none; 
+    outline: none;
 }
 
 h1,
@@ -489,8 +490,6 @@ section { padding: 80px 0; }
 									GALLERY SLIDER STYLES
 ----------------------------------------------------------------------------------------*/
 
-
-
 .owl-carousel .owl-wrapper:after {
 	content: ".";
 	display: block;
@@ -653,8 +652,6 @@ section { padding: 80px 0; }
 										PRELOADER
 ----------------------------------------------------------------------------------------*/
 
-
-
 #preloader {
 	top: 0;
 	right: 0;
@@ -752,9 +749,132 @@ rotation { 0% {
 										MAIN NAVIGATION
 ----------------------------------------------------------------------------------------*/
 
+.dropdown{
+	display: inline-block;
+	position: relative;
+}
+
+.dropbtn{
+	background-color: #f1f1f1;
+	background-size: 100%;
+	background-image: url(../images/searchicon2.png);
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-right: 35px;
+    padding-left: 30px;
+    padding-bottom: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover{
+	background-color: white;
+}
+
+.dropdown-contentgame{
+	min-width: 575px;
+	right: 0;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-contentmovie{
+	min-width: 715px;
+	right: 0;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-contentsoft{
+	min-width: 555px;
+	right: 0;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-contentanime{
+	min-width: 790px;
+	right: 0;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.show{
+	display: block;
+}
+
+#nav .lisearch{
+	display: none;
+}
+
+#myInput{
+	width: 100%;
+	background-size: 25px;
+    background-image: url(../images/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+}
+
+#myInput2{
+	width: 100%;
+	background-size: 25px;
+    background-image: url(../images/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+}
+
+@media (max-width: 991px) and (min-width: 120px) {
+	.dropdown{
+		display: none;
+	}
+
+	#nav .lisearch{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+	}
+}
+
+#myTable{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#myTable th, #myTable td{
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr{
+    border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover{
+    background-color: #f1f1f1;
+}
 
 
-#nav {
+#nav{
 	list-style: none;
 	float: right;
 	position: relative;
@@ -904,8 +1024,6 @@ rotation { 0% {
 /*----------------------------------------------------------------------------------------
 										HEADER
 ----------------------------------------------------------------------------------------*/
-
-
 
 .navbar { background: #f4f4f4; }
 
@@ -1337,8 +1455,6 @@ opacity:1;
 /*----------------------------------------------------------------------------------------
 										PORTFOLIO
 ----------------------------------------------------------------------------------------*/
-
-
 
 .portfolio_block {
 	padding: 50px;
@@ -1817,8 +1933,6 @@ opacity:1;
 /*----------------------------------------------------------------------------------------
 											CONTACT
 ----------------------------------------------------------------------------------------*/
-
-
 
 .contact_block h3:first-child { margin: 0 0 50px 0; }
 
