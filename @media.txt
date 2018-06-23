@@ -1,0 +1,22 @@
+@media (max-width: 992px) {
+@media (max-width: 480px) {
+@media (max-width: 320px) {
+@media (max-width: 768px) {
+@media (max-width: 640px) {
+
+/*
+@media (max-width: 1920px) and (min-width: 1680px) {
+	.dropdown-content{
+		max-width: 1919px;
+		min-width: 1680px;
+	}
+}
+*/
+
+@media (max-width: 1679px) {
+@media (max-width: 1440px) {
+@media (max-width: 1280px) {
+@media (max-width: 1150px) {
+@media (max-width: 1000px) {
+@media (max-width: 1400px) {
+@media (max-width: 1200px) and (min-width: 992px), (max-width: 603px) {

@@ -39,10 +39,19 @@
 					
 					<ul id="nav">
 
-						<li><a href="index.html">Home</a> </li>
-						<li><a href="software.html#intro">Top</a> </li>
+						<li><a href="software.html#intro">Home</a> </li>
 						<li><a href="software.html#opsis">Operating System</a> </li>
 						<li><a href="software.html#sofin">Software Installer</a> </li>
+						<li class="lisearch"><input type="text" id="myInput2" onkeyup="filterFunction2()" placeholder="Search the name..."></li>
+
+						<!-- Search Dropdown -->
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn"></button>
+							  <div id="myDropdown" class="dropdown-contentsoft">
+							    <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search the name...">
+							  </div>
+						</div>
+						<!-- End Search Dropdown -->
 
 					</ul>
 				</div>
@@ -66,55 +75,44 @@
 	<section id="portfolio" class="portfolio_block">
 		<center><h2 class="main_slogan"><span>Operating System (Up To Date)</span></h2></center>
 		<div class="container_fluid">
+<br>
+<table id="myTable">
+
+<tr class="header">
+	<th style="width: 5%;">No</th>
+	<th style="width: 50%;">Name</th>
+	<th style="width: 15%;">Size</th>
+	<th style="width: 15%;">Place</th>
+	<th style="width: 15%;">Type</th>
+</tr>
+
+<tr>
+	<td>001</td>
+	<td>Android 4.3 x86 JellyBean</td>
+	<td>199 MB</td>
+	<td>ISO</td>
+	<td>Installer</td>
+</tr>
+
+<tr>
+	<td>002</td>
+	<td>Android 4.4 R5 x86 KitKat</td>
+	<td>441 MB</td>
+	<td>ISO</td>
+	<td>Installer</td>
+</tr>
+
+<tr>
+	<td>003</td>
+	<td>Android 5.1 RC1 x86 Lollipop</td>
+	<td>358 MB</td>
+	<td>ISO</td>
+	<td>Installer</td>
+</tr>
+
+</table>
+
 			<div class="grid"> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">Android 4.3 x86 JellyBean</h4>
-						<div class="info">
-							<div class="title">
-								<br>
-								<h3>Size (Iso) : 199 MB</h3>
-								<h3>Type : Installer</h3>
-							</div>
-						</div>
-					<img src="images/iso2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">Android 4.4 R5 x86 KitKat</h4>
-						<div class="info">
-							<div class="title">
-								<br>
-								<h3>Size (Iso) : 441 MB</h3>
-								<h3>Type : Installer</h3>
-							</div>
-						</div>
-					<img src="images/iso2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">Android 5.1 RC1 x86 Lollipop</h4>
-						<div class="info">
-							<div class="title">
-								<br>
-								<h3>Size (Iso) : 358 MB</h3>
-								<h3>Type : Installer</h3>
-							</div>
-						</div>
-					<img src="images/iso2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
 
 				<!-- Item begin -->
 				<div class="item_container">
@@ -596,6 +594,52 @@
 <script src="js/typed.js" type="text/javascript"></script> 
 <script src="js/custom.js" type="text/javascript"></script>
 <script src="js/lightbox.js" type="text/javascript"></script>
+
+<script>
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	function filterFunction() {
+
+	  var input, filter, table, tr, td, i;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("tr");
+
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("td")[1];
+	    if (td) {
+	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    } 
+	  }
+	}
+
+	function filterFunction2() {
+
+	  var input, filter, table, tr, td, i;
+	  input = document.getElementById("myInput2");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("tr");
+
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("td")[1];
+	    if (td) {
+	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    } 
+	  }
+	}
+</script>
 
 <!--[if lte IE 9]>
 	<script src="scripts/respond.min.js"></script>
