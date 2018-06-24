@@ -41,13 +41,13 @@
 						<li><a href="movie.html#holmov">Hollywood Movie</a> </li>
 						<li><a href="movie.html#thamov">Thailand Movie</a> </li>
 						<li><a href="movie.html#indmov">Indonesia Movie</a> </li>
-						<li class="lisearch"><input type="text" id="myInput2" onkeyup="filterFunction2()" placeholder="Search the name..."></li>
+						<li class="lisearch"><input type="search" id="myInput2" class="light-table-filter" data-table="order-table" placeholder="Search the name..."></li>
 
 						<!-- Search Dropdown -->
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn"></button>
 							  <div id="myDropdown" class="dropdown-contentmovie">
-							    <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search the name...">
+							    <input type="search" id="myInput" class="light-table-filter" data-table="order-table" placeholder="Search the name...">
 							  </div>
 						</div>
 						<!-- End Search Dropdown -->
@@ -69,14 +69,14 @@
 	<!-- INTRO END -->
 	</center>
 
-	<!-- COLLECTION BEGIN -->
-	<div id="holmov">
-	<section id="portfolio" class="portfolio_block">
-		<center><h2 class="main_slogan"><span>Hollywood Movie (Updating)</span></h2></center>
-		<div class="container_fluid">
+<!-- COLLECTION BEGIN -->
+<div id="holmov">
+<section id="portfolio" class="portfolio_block">
+<center><h2 class="main_slogan"><span>Hollywood Movie (14 Movie)</span></h2></center>
 <br>
-<table id="myTable">
+<table id="myTable" class="order-table table">
 
+<thead>
   <tr class="header">
   	<th style="width: 5%;">No</th>
     <th style="width: 50%;">Name</th>
@@ -85,7 +85,9 @@
     <th style="width: 11.25%;">Subtitle</th>
     <th style="width: 11.25%;">Resolution</th>
   </tr>
+</thead>
 
+<tbody>
   <tr>
   	<td>001</td>
     <td>3 Idiots (2009)</td>
@@ -113,192 +115,112 @@
     <td>720p</td>
   </tr>
 
+  <tr>
+  	<td>004</td>
+  	<td>21 Jump Street (2012)</td>
+  	<td>696 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>005</td>
+  	<td>22 Jump Street (2014)</td>
+  	<td>799 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>006</td>
+  	<td>127 Hours (2010)</td>
+  	<td>651 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>007</td>
+	<td>300 (2006)</td>
+  	<td>798 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>008</td>
+  	<td>300 Rise Of An Empire (2014)</td>
+  	<td>798 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>009</td>
+  	<td>2012 (2009)</td>
+  	<td>746 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>010</td>
+  	<td>A Dogs Purpose (2017)</td>
+  	<td>610 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>011</td>
+  	<td>A Haunted House (2013)</td>
+  	<td>624 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>012</td>
+  	<td>A Haunted House 2 (2013)</td>
+  	<td>600 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>013</td>
+  	<td>A Nightmare On Elm Street (2010)</td>
+  	<td>700 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+
+  <tr>
+  	<td>014</td>
+  	<td>Abraham Lincoln Vampire Hunter (2012)</td>
+  	<td>621 MB</td>
+	<td>Folder</td>
+    <td>Indonesia</td>
+    <td>720p</td>
+  </tr>
+</tbody>
+
 </table>
 
-			<div class="grid"> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">21 Jump Street (2012)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 696 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">22 Jump Street (2014)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 799 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">127 Hours (2010)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 651 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">300 (2006)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 798 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">300 Rise Of An Empire (2014)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 798 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">2012 (2009)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 746 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">A Dogs Purpose (2017)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 610 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">A Haunted House (2013)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 624 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">A Haunted House 2 (2013)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 600 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">A Nightmare On Elm Street (2010)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 700 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder2.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-				<!-- Item begin -->
-				<div class="item_container">
-					<a href="#">
-					<h4 class="judul">Abraham Lincoln Vampire Hunter (2012)</h4>
-						<div class="info">
-							<div class="title">
-								<h3>Size (Folder) : 621 MB</h3>
-								<h3>Subtitle : Indonesia</h3>
-								<h3>Resolution : 720p</h3>
-							</div>
-						</div>
-					<img src="images/folder3.png" alt="">
-				</a>
-				</div>
-				<!-- Item end --> 
-
-			</div>
-			<a href="#" class="btn_all"> Loading... (Update Everyday)</a>
-		</div>
-	</section>
-	</div>
-	<!-- COLLECTION END --> 
+<a href="#" class="btn_all"> Loading... (Update Everyday)</a>
+</section>
+</div>
+<!-- COLLECTION END --> 
 
 	<!-- COLLECTION BEGIN -->
 	<div id="thamov">
@@ -487,45 +409,45 @@
     	document.getElementById("myDropdown").classList.toggle("show");
 	}
 
-	function filterFunction() {
+	(function(document) {
+	'use strict';
 
-	  var input, filter, table, tr, td, i;
-	  input = document.getElementById("myInput");
-	  filter = input.value.toUpperCase();
-	  table = document.getElementById("myTable");
-	  tr = table.getElementsByTagName("tr");
+	var LightTableFilter = (function(Arr) {
 
-	  for (i = 0; i < tr.length; i++) {
-	    td = tr[i].getElementsByTagName("td")[1];
-	    if (td) {
-	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-	        tr[i].style.display = "";
-	      } else {
-	        tr[i].style.display = "none";
-	      }
-	    } 
-	  }
-	}
+		var _input;
 
-	function filterFunction2() {
+		function _onInputEvent(e) {
+			_input = e.target;
+			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filter);
+				});
+			});
+		}
 
-	  var input, filter, table, tr, td, i;
-	  input = document.getElementById("myInput2");
-	  filter = input.value.toUpperCase();
-	  table = document.getElementById("myTable");
-	  tr = table.getElementsByTagName("tr");
+		function _filter(row) {
+			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+		}
 
-	  for (i = 0; i < tr.length; i++) {
-	    td = tr[i].getElementsByTagName("td")[1];
-	    if (td) {
-	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-	        tr[i].style.display = "";
-	      } else {
-	        tr[i].style.display = "none";
-	      }
-	    } 
-	  }
-	}
+		return {
+			init: function() {
+				var inputs = document.getElementsByClassName('light-table-filter');
+				Arr.forEach.call(inputs, function(input) {
+					input.oninput = _onInputEvent;
+				});
+			}
+		};
+	})(Array.prototype);
+
+	document.addEventListener('readystatechange', function() {
+		if (document.readyState === 'complete') {
+			LightTableFilter.init();
+		}
+	});
+
+})(document);
 </script>
 
 <!--[if lte IE 9]>

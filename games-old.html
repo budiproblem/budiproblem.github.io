@@ -41,13 +41,13 @@
 						<li><a href="games.html#intro">Home</a> </li>
 						<li><a href="games.html#hardcore">Games PC Hardcore</a> </li>
 						<li><a href="games.html#casual">Games PC Casual</a> </li>
-						<li class="lisearch"><input type="search" id="myInput2" class="light-table-filter" data-table="order-table" placeholder="Search the name..."></li>
+						<li class="lisearch"><input type="text" id="myInput2" onkeyup="filterFunction2()" placeholder="Search the name..."></li>
 
 						<!-- Search Dropdown -->
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn"></button>
 							  <div id="myDropdown" class="dropdown-contentgame">
-							    <input type="search" id="myInput" class="light-table-filter" data-table="order-table" placeholder="Search the name...">
+							    <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search the name...">
 							  </div>
 						</div>
 						<!-- End Search Dropdown -->
@@ -72,11 +72,11 @@
 <!-- COLLECTION BEGIN -->
 <div id="hardcore">
 <section id="portfolio" class="portfolio_block">
-<center><h2 class="main_slogan"><span>Games PC Hardcore (28 Games)</span></h2></center>
 <br>
-<table id="myTable" class="order-table table">
+<table id="myTable">
 
-<thead>
+<center><h2 class="main_slogan"><span>Games PC Hardcore (Updating)</span></h2></center>
+
   <tr class="header">
   	<th style="width: 5%;">No</th>
     <th style="width: 50%;">Name</th>
@@ -84,9 +84,7 @@
     <th style="width: 15%;">Place</th>
     <th style="width: 15%;">Type</th>
   </tr>
-</thead>
 
-<tbody>
   <tr>
   	<td>001</td>
     <td>Attack On Titan 2</td>
@@ -310,7 +308,6 @@
   	<td>Rar</td>
   	<td>Portable</td>
   </tr>
-</tbody>
 
 </table>
 <a href="#" class="btn_all"> Loading... (Update Everyday)</a>
@@ -318,14 +315,14 @@
 </div>
 <!-- COLLECTION END --> 
 
-<!-- COLLECTION BEGIN -->
-<div id="casual">
-<section id="portfolio" class="portfolio_block">
-<center><h2 class="main_slogan"><span>Games PC Casual (10 Games)</span></h2></center>
+	<!-- COLLECTION BEGIN -->
+	<div id="casual">
+	<section id="portfolio" class="portfolio_block">
+		<center><h2 class="main_slogan"><span>Games PC Casual (10 Games)</span></h2></center>
+		<div class="container_fluid">
 <br>
-<table id="myTable" class="order-table table">
+<table id="myTable">
 
-<thead>
   <tr class="header">
   	<th style="width: 5%;">No</th>
     <th style="width: 50%;">Name</th>
@@ -333,9 +330,7 @@
     <th style="width: 15%;">Place</th>
     <th style="width: 15%;">Type</th>
   </tr>
-</thead>
 
-<tbody>
   <tr>
   	<td>001</td>
   	<td>Angry Birds Rio</td>
@@ -415,11 +410,11 @@
   	<td>Rar</td>
   	<td>Portable</td>
   </tr>
-</tbody>
 
 </table>
 
-</section>
+		</div>
+	</section>
 </div>
 <!-- COLLECTION END -->
 
@@ -458,45 +453,45 @@
     	document.getElementById("myDropdown").classList.toggle("show");
 	}
 
-	(function(document) {
-	'use strict';
+	function filterFunction() {
 
-	var LightTableFilter = (function(Arr) {
+	  var input, filter, table, tr, td, i;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("tr");
 
-		var _input;
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("td")[1];
+	    if (td) {
+	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    } 
+	  }
+	}
 
-		function _onInputEvent(e) {
-			_input = e.target;
-			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
-			Arr.forEach.call(tables, function(table) {
-				Arr.forEach.call(table.tBodies, function(tbody) {
-					Arr.forEach.call(tbody.rows, _filter);
-				});
-			});
-		}
+	function filterFunction2() {
 
-		function _filter(row) {
-			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
-			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
-		}
+	  var input, filter, table, tr, td, i;
+	  input = document.getElementById("myInput2");
+	  filter = input.value.toUpperCase();
+	  table = document.getElementById("myTable");
+	  tr = table.getElementsByTagName("tr");
 
-		return {
-			init: function() {
-				var inputs = document.getElementsByClassName('light-table-filter');
-				Arr.forEach.call(inputs, function(input) {
-					input.oninput = _onInputEvent;
-				});
-			}
-		};
-	})(Array.prototype);
-
-	document.addEventListener('readystatechange', function() {
-		if (document.readyState === 'complete') {
-			LightTableFilter.init();
-		}
-	});
-
-})(document);
+	  for (i = 0; i < tr.length; i++) {
+	    td = tr[i].getElementsByTagName("td")[1];
+	    if (td) {
+	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+	        tr[i].style.display = "";
+	      } else {
+	        tr[i].style.display = "none";
+	      }
+	    } 
+	  }
+	}
 </script>
 
 <!--[if lte IE 9]>

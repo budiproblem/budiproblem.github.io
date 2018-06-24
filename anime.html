@@ -43,13 +43,13 @@
 						<li><a href="anime.html#long">Anime Long Episode</a> </li>
 						<li><a href="anime.html#movie">Anime The Movie</a> </li>
 						<li><a href="anime.html#short">Anime Short Episode</a> </li>
-						<li class="lisearch"><input type="text" id="myInput2" onkeyup="filterFunction2()" placeholder="Search the name..."></li>
+						<li class="lisearch"><input type="search" id="myInput2" class="light-table-filter" data-table="order-table" placeholder="Search the name..."></li>
 
 						<!-- Search Dropdown -->
 						<div class="dropdown">
 							<button onclick="myFunction()" class="dropbtn"></button>
 							  <div id="myDropdown" class="dropdown-contentanime">
-							    <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search the name...">
+							    <input type="search" id="myInput" class="light-table-filter" data-table="order-table" placeholder="Search the name...">
 							  </div>
 						</div>
 						<!-- End Search Dropdown -->
@@ -71,14 +71,14 @@
 	<!-- INTRO END -->
 	</center>
 
-	<!-- COLLECTION BEGIN -->
-	<div id="long">
-	<section id="portfolio" class="portfolio_block">
-		<center><h2 class="main_slogan"><span>Anime Long Episode (Up To Date)</span></h2></center>
-		<div class="container_fluid">
+<!-- COLLECTION BEGIN -->
+<div id="long">
+<section id="portfolio" class="portfolio_block">
+<center><h2 class="main_slogan"><span>Anime Long Episode (5 Anime)</span></h2></center>
 <br>
-<table id="myTable">
+<table id="myTable" class="order-table table">
 
+<thead>
   <tr class="header">
   	<th style="width: 5%;">No</th>
     <th style="width: 40%;">Name</th>
@@ -89,7 +89,9 @@
     <th style="width: 13%;">Episode</th>
     <th style="width: 9%;">Status</th>
   </tr>
+</thead>
 
+<tbody>
   <tr>
   	<td>001</td>
     <td>Bleach</td>
@@ -144,13 +146,13 @@
     <td>500 Episode + 1 OVA</td>
     <td>The End</td>
   </tr>
+</tbody>
 
 </table>
 
-	</div>
-	</section>
+</section>
 </div>
-	<!-- COLLECTION END --> 
+<!-- COLLECTION END --> 
 
 	<!-- COLLECTION BEGIN -->
 	<div id="movie">
@@ -493,45 +495,45 @@
     	document.getElementById("myDropdown").classList.toggle("show");
 	}
 
-	function filterFunction() {
+	(function(document) {
+	'use strict';
 
-	  var input, filter, table, tr, td, i;
-	  input = document.getElementById("myInput");
-	  filter = input.value.toUpperCase();
-	  table = document.getElementById("myTable");
-	  tr = table.getElementsByTagName("tr");
+	var LightTableFilter = (function(Arr) {
 
-	  for (i = 0; i < tr.length; i++) {
-	    td = tr[i].getElementsByTagName("td")[1];
-	    if (td) {
-	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-	        tr[i].style.display = "";
-	      } else {
-	        tr[i].style.display = "none";
-	      }
-	    } 
-	  }
-	}
+		var _input;
 
-	function filterFunction2() {
+		function _onInputEvent(e) {
+			_input = e.target;
+			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filter);
+				});
+			});
+		}
 
-	  var input, filter, table, tr, td, i;
-	  input = document.getElementById("myInput2");
-	  filter = input.value.toUpperCase();
-	  table = document.getElementById("myTable");
-	  tr = table.getElementsByTagName("tr");
+		function _filter(row) {
+			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+		}
 
-	  for (i = 0; i < tr.length; i++) {
-	    td = tr[i].getElementsByTagName("td")[1];
-	    if (td) {
-	      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-	        tr[i].style.display = "";
-	      } else {
-	        tr[i].style.display = "none";
-	      }
-	    } 
-	  }
-	}
+		return {
+			init: function() {
+				var inputs = document.getElementsByClassName('light-table-filter');
+				Arr.forEach.call(inputs, function(input) {
+					input.oninput = _onInputEvent;
+				});
+			}
+		};
+	})(Array.prototype);
+
+	document.addEventListener('readystatechange', function() {
+		if (document.readyState === 'complete') {
+			LightTableFilter.init();
+		}
+	});
+
+})(document);
 </script>
 
 <!--[if lte IE 9]>
