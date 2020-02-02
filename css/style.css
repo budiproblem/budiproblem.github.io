@@ -1189,11 +1189,15 @@ rotation { 0% {
 
 #soc li a.icon-fb  { background: #606571; }
 
+#soc li a.icon-yt  { background: #606571; }
+
 #soc li a.icon-tw  { background: #606571; }
 
 #soc li a.icon-ig:hover  { background: #ea4c89; }
 
 #soc li a.icon-fb:hover  { background: #4066b5; }
+
+#soc li a.icon-yt:hover  { background: #E62117; }
 
 #soc li a.icon-tw:hover  { background: #00d2ff; }
 
@@ -1849,7 +1853,7 @@ opacity:1;
 
 .about_block { background: #f8f8f8; }
 
-.about_block .half_img { background-image: url(../images/about_img4b.jpg); }
+.about_block .half_img { background-image: url(../images/about_img2020.jpg); }
 
 .about_block small {
 	display: block;
@@ -2698,4 +2702,26 @@ colorize {
 80% {color:#369;}
 100% {color:#09F;}
 
+}
+
+/* 2020 CSS START HERE */
+
+.maintext{
+	color: #E62117;
+	text-decoration: none;
+}
+
+.maintext:hover{
+	color: #E62117;
+	text-decoration: none;
+}
+
+.maintext2{
+	color: #ea4c89;
+	text-decoration: none;
+}
+
+.maintext2:hover{
+	color: #ea4c89;
+	text-decoration: none;
 }
