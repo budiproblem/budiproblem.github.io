@@ -1185,39 +1185,39 @@ rotation { 0% {
 
 #soc li a.icon-soc-googleplus:hover  { background: #dd4b39; }
 
-#soc li a.icon-ig  { background: #606571; }
+#soc li a.icon-ig  { background: #606571; transition: 0.5s; }
 
-#soc li a.icon-fb  { background: #606571; }
+#soc li a.icon-fb  { background: #606571; transition: 0.5s; }
 
-#soc li a.icon-yt  { background: #606571; }
+#soc li a.icon-yt  { background: #606571; transition: 0.5s; }
 
-#soc li a.icon-tw  { background: #606571; }
+#soc li a.icon-tw  { background: #606571; transition: 0.5s; }
 
-#soc li a.icon-ig:hover  { background: #ea4c89; }
+#soc li a.icon-ig:hover  { background: #ea4c89; transition: 0.5s; }
 
-#soc li a.icon-fb:hover  { background: #4066b5; }
+#soc li a.icon-fb:hover  { background: #4066b5; transition: 0.5s; }
 
-#soc li a.icon-yt:hover  { background: #E62117; }
+#soc li a.icon-yt:hover  { background: #E62117; transition: 0.5s; }
 
-#soc li a.icon-tw:hover  { background: #00d2ff; }
+#soc li a.icon-tw:hover  { background: #00d2ff; transition: 0.5s; }
 
-#soc li a.icon-soc-instagram:hover  { background: #517fa4; }
+#soc li a.icon-soc-instagram:hover  { background: #517fa4; transition: 0.5s; }
 
-#soc li a.icon-soc-pinterest:hover  { background: #cb2027; }
+#soc li a.icon-soc-pinterest:hover  { background: #cb2027; transition: 0.5s; }
 
-#soc li a.icon-soc-linkedin:hover  { background: #007bb6; }
+#soc li a.icon-soc-linkedin:hover  { background: #007bb6; transition: 0.5s; }
 
-#soc li a.icon-soc-flickr:hover  { background: #ff0084; }
+#soc li a.icon-soc-flickr:hover  { background: #ff0084; transition: 0.5s; }
 
-#soc li a.icon-soc-youtube:hover  { background: #bb0000; }
+#soc li a.icon-soc-youtube:hover  { background: #bb0000; transition: 0.5s; }
 
-#soc li a.icon-soc-vimeo:hover  { background: #aad450; }
+#soc li a.icon-soc-vimeo:hover  { background: #aad450; transition: 0.5s; }
 
-#soc li a.icon-soc-github:hover  { background: #333; }
+#soc li a.icon-soc-github:hover  { background: #333; transition: 0.5s; }
 
-#soc li a.icon-soc-tumblr:hover  { background: #32506d; }
+#soc li a.icon-soc-tumblr:hover  { background: #32506d; transition: 0.5s; }
 
-#soc li a.icon-soc-feed:hover  { background: #F90; }
+#soc li a.icon-soc-feed:hover  { background: #F90; transition: 0.5s; }
 
 
 @media (max-width: 992px) {
@@ -2709,19 +2709,21 @@ colorize {
 .maintext{
 	color: #E62117;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .maintext:hover{
 	color: #E62117;
-	text-decoration: none;
+	transition: 0.5s;
 }
 
 .maintext2{
 	color: #ea4c89;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .maintext2:hover{
 	color: #ea4c89;
-	text-decoration: none;
+	transition: 0.5s;
 }
