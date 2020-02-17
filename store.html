@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BUDI PROBLEM - STORE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+<link href="css/soc-icons.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style_blue.css" rel="alternate stylesheet" type="text/css" title="blue" media="screen"/>
+<link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="js/styleswitcher.js"></script>	
+<script>if ( top !== self ) top.location.replace( self.location.href );</script>
+
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+	<div class="clock">
+		<div class="arrow_sec"></div>
+		<div class="arrow_min"></div>
+	</div>
+</div>
+<div id="wrap"> 
+	
+	<!-- HEADER BEGIN -->
+	<header id="header">
+		<nav class="navbar navbar-fixed-top">
+			<div class="container_fluid"> <a class="navbar-brand trip" href="index.html"> <img src="images/logo2.png" alt="AER - Simply clean" height="29" width="29" /> </a>
+
+				<button class="navbar-toggle menu-collapse-btn" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="collapse navbar-collapse navMenuCollapse">
+					
+					<ul id="nav">
+
+						<li><a href="software.html#intro">HOME</a> </li>
+						<li><a href="software.html#opsis">OPERATING</a> </li>
+						<li><a href="software.html#sofin">SOFTWARE</a> </li>
+						<li class="lisearch"><input type="search" id="myInput2" class="light-table-filter" data-table="order-table" placeholder="Search the name..."></li>
+
+						<!-- Search Dropdown -->
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn"></button>
+							  <div id="myDropdown" class="dropdown-contentsoft">
+							    <input type="search" id="myInput" class="light-table-filter" data-table="order-table" placeholder="Search the name...">
+							  </div>
+						</div>
+						<!-- End Search Dropdown -->
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER END --> 
+	
+	<center>
+	<!-- INTRO BEGIN -->
+	<section id="intro" class="intro_block">
+		<h2 class="main_slogan"><span>Latest Store : AMD</span></h2>
+		<div class="slides-container"> <img src="images/soft4.jpg" alt=""> <img src="images/soft1.jpg" alt=""> <img src="images/soft2.jpg" alt=""> <img src="images/soft3.jpg" alt=""> </div>
+		<a href="#portfolio" class="pointer trip"></a> </section>
+	<!-- INTRO END -->
+	</center>
+
+<!-- COLLECTION BEGIN -->
+<div id="opsis">
+<section id="portfolio" class="portfolio_block">
+<center><h2 class="main_slogan"><span>Operating (20)</span></h2></center>
+<br>
+<table id="myTable" class="order-table table">
+
+<thead>
+<tr class="header">
+	<th style="width: 5%;">No</th>
+	<th style="width: 80%;">Name & Image</th>
+	<th style="width: 15%;">Price</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>001</td>
+	<td>TP-Link HA100 Bluetooth 4.1 Music Receiver <a href="https://www.google.com/search?q=TP-Link%20HA100%20Bluetooth%204.1%20Music%20Receiver&safe=strict&source=lnms&tbm=isch">(View)</a></td>
+	<td>250K</td>
+</tr>
+</tbody>
+
+</table>
+
+</section>
+</div>
+<!-- COLLECTION END --> 
+
+	<!-- FOOTER BEGIN -->
+	<footer id="footer">
+		<div class="container">
+			<ul id="soc">
+				<li><a href="https://www.youtube.com/channel/UCMqI9so06f4MLZ0SS-PRy5A" class="icon-yt"><img src="images/yt.png" width="55px"></a></li>
+				<li><a href="https://www.instagram.com/budipro_blem" class="icon-ig"><img src="images/ig.png" width="55px"></a></li>
+				<!--<li><a href="https://twitter.com/BudiAstawaa_" class="icon-tw"><img src="images/tw.png" width="55px"></a></li>-->
+			</ul>
+			<br><br>
+			<p>&copy; 2020 BUDI PROBLEM</p>
+		</div>
+	</footer>
+	<!-- FOOTER END --> 
+</div>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/owl.carousel.min.js" type="text/javascript"></script> 
+<script src="js/jquery.validate.min.js" type="text/javascript"></script> 
+<script src="js/smoothscroll.js" type="text/javascript"></script> 
+<script src="js/jquery.smooth-scroll.min.js" type="text/javascript"></script> 
+<script src="js/placeholders.jquery.min.js" type="text/javascript"></script> 
+<script src="js/jquery.superslides.min.js" type="text/javascript"></script> 
+<script src="js/isotope.pkgd.min.js" type="text/javascript"></script> 
+<script src="js/typed.js" type="text/javascript"></script> 
+<script src="js/custom.js" type="text/javascript"></script>
+<script src="js/lightbox.js" type="text/javascript"></script>
+
+<script>
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	(function(document) {
+	'use strict';
+
+	var LightTableFilter = (function(Arr) {
+
+		var _input;
+
+		function _onInputEvent(e) {
+			_input = e.target;
+			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filter);
+				});
+			});
+		}
+
+		function _filter(row) {
+			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+		}
+
+		return {
+			init: function() {
+				var inputs = document.getElementsByClassName('light-table-filter');
+				Arr.forEach.call(inputs, function(input) {
+					input.oninput = _onInputEvent;
+				});
+			}
+		};
+	})(Array.prototype);
+
+	document.addEventListener('readystatechange', function() {
+		if (document.readyState === 'complete') {
+			LightTableFilter.init();
+		}
+	});
+
+})(document);
+</script>
+
+<!--[if lte IE 9]>
+	<script src="scripts/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>
